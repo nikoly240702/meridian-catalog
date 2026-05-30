@@ -44,12 +44,12 @@
 <section class="section wrap" style="padding-top:48px">
   <div class="pdp">
     <div class="gallery">
-      <div class="main"><img src="https://loremflickr.com/g/700/520/pump,industrial?lock=70" alt="Насос центробежный КМ 80-50-200"></div>
+      <div class="main"><img src="assets/img/pump.jpg" alt="Насос центробежный КМ 80-50-200"></div>
       <div class="thumbs">
-        <div><img src="https://loremflickr.com/g/200/200/pump?lock=71" alt=""></div>
-        <div><img src="https://loremflickr.com/g/200/200/motor?lock=72" alt=""></div>
-        <div><img src="https://loremflickr.com/g/200/200/industrial?lock=73" alt=""></div>
-        <div><img src="https://loremflickr.com/g/200/200/machine?lock=74" alt=""></div>
+        <div><img src="assets/img/pump.jpg" alt=""></div>
+        <div><img src="assets/img/motor.jpg" alt=""></div>
+        <div><img src="assets/img/compressor.jpg" alt=""></div>
+        <div><img src="assets/img/factory.jpg" alt=""></div>
       </div>
     </div>
     <div class="info">
@@ -107,11 +107,11 @@
     ['Насос консольный К 100-65-200','НК-100065','pump'],
     ['Электродвигатель АИР 132 M4','ЭД-132М4','motor'],
     ['Компрессор винтовой 7.5 кВт','КВ-0075','compressor'],
-    ['Редуктор червячный 1Ч-80','РЧ-080','machine'],
+    ['Редуктор червячный 1Ч-80','РЧ-080','gearbox'],
   ];
-  document.getElementById('related').innerHTML = related.map((p, i) => `
+  document.getElementById('related').innerHTML = related.map((p) => `
     <a class="prod reveal" href="product.html">
-      <div class="ph"><span class="stk">Под заказ</span><img loading="lazy" src="https://loremflickr.com/g/400/300/${p[2]},industrial?lock=${80 + i}" alt=""></div>
+      <div class="ph"><span class="stk">Под заказ</span><img loading="lazy" src="assets/img/${p[2]}.jpg" alt="${p[0]}"></div>
       <div class="body">
         <div class="art">Артикул: ${p[1]}</div>
         <h3>${p[0]}</h3>

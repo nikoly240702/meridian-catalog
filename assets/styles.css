@@ -55,7 +55,7 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:0;
 
 /* ===== HERO ===== */
 .hero{position:relative;background:var(--black);color:#fff;overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:url("https://loremflickr.com/g/1600/900/factory,industrial?lock=10") center/cover;opacity:.28;filter:contrast(1.1)}
+.hero .bg{position:absolute;inset:0;background:url("img/factory.jpg") center/cover;opacity:.28;filter:contrast(1.1)}
 .hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--black) 30%,rgba(14,15,18,.55) 70%,rgba(225,20,40,.25))}
 .hero .wrap{position:relative;padding:78px 36px 0}
 .hero .eyebrow{font-family:'Manrope';font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--red);font-weight:600}
@@ -129,7 +129,7 @@ header nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:0;
 
 /* ===== CTA ===== */
 .ctaband{position:relative;background:var(--black);color:#fff;overflow:hidden}
-.ctaband .bg{position:absolute;inset:0;background:url("https://loremflickr.com/g/1600/500/factory,industrial?lock=32") center/cover;opacity:.2}
+.ctaband .bg{position:absolute;inset:0;background:url("img/factory.jpg") center/cover;opacity:.2}
 .ctaband .wrap{position:relative;padding:70px 36px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
 .ctaband h2{font-size:clamp(28px,3.4vw,40px);font-weight:700;max-width:620px;line-height:1.05}
 
