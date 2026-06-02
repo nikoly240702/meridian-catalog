@@ -8,6 +8,8 @@ document.querySelectorAll('.reveal').forEach((el, i) => {
   el.style.transitionDelay = (Math.min(i, 6) * 60) + 'ms';
   io.observe(el);
 });
+// Страховка: если что-то помешало наблюдателю, показать все блоки через 1.5с
+setTimeout(() => document.querySelectorAll('.reveal:not(.in)').forEach((el) => el.classList.add('in')), 1500);
 
 // Mobile menu toggle
 const mt = document.querySelector('.mob-toggle');
